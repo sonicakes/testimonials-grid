@@ -1,0 +1,126 @@
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background: hsl(210, 46%, 95%);
+    font-size: 13px;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.testimonial-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .testimonial-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        max-width: 1000px;
+    }
+  }
+
+.testimonial-item {
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px hsl(0, 0%, 81%);
+}
+
+.purple {
+    background-color: hsl(263, 55%, 52%);
+    color: #fff;
+    position: relative;
+}
+
+@media screen and (min-width: 768px) {
+    .purple{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+  }
+
+  .purple .pattern {
+      position: absolute;
+      top: 0;
+      right: 12px;
+      max-height: 80px;
+  }
+
+.pastel {
+    background: #F7F6CF;
+   
+}
+
+@media screen and (min-width: 768px) {
+    .pastel{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+  }
+
+.dark {
+    background: hsl(219, 29%, 14%);
+    color: #fff;
+
+}
+
+@media screen and (min-width: 768px) {
+    .dark{
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+  }
+
+.gray {
+    background: hsl(217, 19%, 35%);
+    color: #fff;
+}
+
+.person-info img {
+    border-radius: 50%;
+    maX-width: 40px;
+}
+
+.person-info {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.subtitle {
+    opacity: 0.5;
+}
+
+.img {
+    margin-right: 15px;
+}
+
+.highlight {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.quote {
+    opacity: 0.7;
+}
+
+@media screen and (min-width: 768px) {
+    .card {
+      flex-direction: row;
+      min-width: 960px;
+      max-width: 960px;
+    }
+  }
